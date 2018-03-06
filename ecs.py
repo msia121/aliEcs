@@ -26,13 +26,15 @@ class aliAPI():
         request = CreateInstanceRequest.CreateInstanceRequest()
         request.get_ResourceOwnerAccount()
         request.set_accept_format('json')
-        request.set_ImageId('m-94kpp9tck')
-        request.set_SecurityGroupId('sg-94zjqi6ui')
+        # 镜像ID
+        request.set_ImageId('')
+        # 安全组
+        request.set_SecurityGroupId('')
         # 服务器类型
         request.set_InstanceType('ecs.s2.large')
         request.set_InternetChargeType('PayByTraffic')
         request.set_InternetMaxBandwidthOut('10')
-        # 设置镜像
+        # ECS名称
         request.set_InstanceName('elastic_tmp')
         # 设置密码
         request.set_Password('123456')
